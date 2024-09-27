@@ -1,0 +1,6 @@
+.reaction-list {
+    display: none;
+}
+.reaction-container:hover .reaction-list {
+    display: block;
+}

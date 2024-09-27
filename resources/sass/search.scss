@@ -1,0 +1,11 @@
+.ais-SearchBox-submit, .ais-SearchBox-reset {
+    display:none!important;
+}
+.ais-SearchBox-input {
+    border: none;
+    @apply block w-full h-full pl-8 pr-3 py-2 rounded-md text-gray-900 placeholder-gray-500 text-sm;
+
+    &:focus {
+        @apply outline-none placeholder-gray-400;
+    }
+}

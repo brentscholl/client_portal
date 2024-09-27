@@ -1,0 +1,2 @@
+
+<option {{ $attributes }}>{{ $slot }}</option>

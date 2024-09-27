@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use App\Traits\BelongsToClient;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Login extends Model
+{
+    use HasFactory, BelongsToClient;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = [];
+
+    // RELATIONSHIPS =========================================================================================
+
+    // SCOPES ================================================================================================
+
+    // API ===================================================================================================
+}

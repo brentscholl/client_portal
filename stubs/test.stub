@@ -1,0 +1,29 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Models\User;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Livewire\Livewire;
+use Tests\TestCase;
+
+class {{ class }} extends TestCase
+{
+    use RefreshDatabase;
+    use WithFaker;
+
+    /** Useful Commands ==================== **/
+    // $response->dumpHeaders();
+    // $response->dumpSession();
+    // $response->dump();
+
+    /** @test */
+    public function example_test()
+    {
+        $this->actingAs(User::factory()->admin()->create());
+        $response = $this->get('/');
+
+        $response->assertStatus(200);
+    }
+}

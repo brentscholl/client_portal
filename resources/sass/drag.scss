@@ -1,0 +1,46 @@
+// Class added on the document body while dragging
+.draggable--is-dragging {
+
+}
+// Class added on the container where the draggable was picked up from
+.draggable-container--is-dragging {
+
+    .phase-line {
+        display: none!important;
+    }
+}
+// Class added on the draggable element that has been picked up
+.draggable-source--is-dragging {
+    opacity: 0.5;
+    @apply pb-10;
+
+    .phase-line {
+        display: none!important;
+    }
+}
+// Class added on the draggable element on drag:stop
+.draggable-source--placed {
+
+}
+// Class added on the draggable container element on drag:stop
+.draggable-container--placed {
+
+}
+// Class added on draggable element you are dragging over
+.draggable--over {
+}
+// Class added on draggable container element you are dragging over
+.draggable-container--over {
+
+}
+// Class added on the original source element, which is hidden on drag
+.draggable--original {
+    @apply border-red-500;
+}
+// Class added on the mirror element
+.draggable-mirror {
+
+    .phase-line {
+        display: none!important;
+    }
+}

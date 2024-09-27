@@ -1,0 +1,17 @@
+.hide-checkbox {
+    display: none!important;
+}
+
+.repeat-day {
+    @apply w-8 h-8 flex justify-center items-center text-gray-900 rounded-full bg-white border text-center font-bold uppercase cursor-pointer transition-all duration-100 ease-in-out;
+}
+.repeat-day:hover {
+    @apply bg-gray-50;
+}
+
+.repeat-checkbox input[type="checkbox"]:checked + .repeat-day {
+    @apply border-secondary-500 bg-secondary-500 text-white shadow-md;
+}
+.repeat-checkbox input[type="checkbox"]:checked + .repeat-day:hover {
+    @apply bg-secondary-400;
+}
